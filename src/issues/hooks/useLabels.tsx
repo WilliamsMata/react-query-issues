@@ -13,7 +13,7 @@ const getLabels = async (): Promise<Label[]> => {
 
 export const useLabels = () => {
   const labelsQuery = useQuery(["labels"], getLabels, {
-    // staleTime: 1000 * 60 * 60,
+    staleTime: 1000 * 60 * 60,
     // initialData: [],
     placeholderData: [
       {
