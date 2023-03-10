@@ -17,7 +17,7 @@ const getIssues = async ({
   state,
   page = 1,
 }: Props): Promise<Issue[]> => {
-  await sleep(2);
+  // await sleep(2);
 
   //* Parámetros de la petición
   const params = new URLSearchParams();
